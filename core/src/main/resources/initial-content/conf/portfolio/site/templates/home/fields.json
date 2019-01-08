@@ -1,0 +1,20 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "name": {
+    "jcr:primaryType": "nt:unstructured",
+    "required": true,
+    "name": ":name",
+    "type": "text",
+    "label": "Name",
+    "sling:resourceType": "sling-cms/components/editor/fields/text"
+  },
+  "backgroundImage": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/path",
+    "basePath": "/static/portfolio/images",
+    "type": "file",
+    "label": "Background Image",
+    "name": "backgroundImage",
+    "required": true
+  }
+}

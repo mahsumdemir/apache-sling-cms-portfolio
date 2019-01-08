@@ -1,0 +1,32 @@
+{
+  "button": "Save Page",
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "backgroundImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/path",
+      "basePath": "/static/portfolio/images",
+      "type": "file",
+      "label": "Background Image",
+      "name": "backgroundImage",
+      "required": true
+    },
+    "published": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Published",
+      "name": "published",
+      "sling:resourceType": "sling-cms/components/editor/fields/select",
+      "options": {
+        "yes": {
+          "label": "Yes",
+          "value": "true"
+        },
+        "no": {
+          "label": "No",
+          "value": "False"
+        }
+      }
+    }
+  }
+}
