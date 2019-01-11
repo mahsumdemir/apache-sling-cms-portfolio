@@ -7,6 +7,23 @@
       "sling:resourceType": "sling-cms/components/editor/fields/text",
       "label": "URL",
       "name": "url"
+    },
+    "variant": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Variant",
+      "name": "variant",
+      "sling:resourceType": "sling-cms/components/editor/fields/select",
+      "options": {
+        "black": {
+          "label": "Black",
+          "value": "black"
+        },
+        "no": {
+          "label": "White",
+          "value": "white"
+        }
+      }
     }
+
   }
 }
