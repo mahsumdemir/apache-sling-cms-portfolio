@@ -3,10 +3,10 @@
   "fields": {
     "sling:resourceType": "sling-cms/components/general/container",
 
-    "url": {
+    "target": {
       "sling:resourceType": "sling-cms/components/editor/fields/text",
       "label": "URL",
-      "name": "url"
+      "name": "target"
     },
     "variant": {
       "jcr:primaryType": "nt:unstructured",
