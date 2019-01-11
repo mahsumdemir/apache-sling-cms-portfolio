@@ -6,7 +6,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
    return gulp.src('./sass/**/*.scss')
        .pipe(sass().on('error', sass.logError))
-       .pipe(gulp.dest('../resources/initial-content/static/clientlibs/portfolio'));
+       .pipe(gulp.dest('../resources/initial-content/static/clientlibs/portfolio/css'));
 });
 
 gulp.task('default', ['sass']);

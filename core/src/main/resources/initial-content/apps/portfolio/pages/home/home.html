@@ -1,1 +1,30 @@
-testing
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/>
+        <link rel="stylesheet" href="/static/clientlibs/portfolio/css/main.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
+    <body class="portfolio">
+        <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/init.jsp'}"/>
+
+        <div class="background-image" style="background-image: url('${properties.backgroundImage @ context='uri'}')"></div>
+
+        <div class="header">
+            <sly data-sly-resource="${'container' @ resourceType = 'sling-cms/components/general/container'}"/>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/finalize.jsp'}"/>
+    </body>
+</html>

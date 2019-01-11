@@ -1,3 +1,65 @@
-h1 {
-  font-size: 25px;
+body {
+  margin: 0;
+}
+
+.portfolio {
+  font-family: 'Roboto', sans-serif;
+
+  .background-image {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.show-desktop {
+  @media screen and (min-width: 1025px) {
+    
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1025px) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 768px){
+    display: none;
+  }
+}
+
+.show-tablet {
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1025px) {
+
+  }
+
+  @media (min-width: 0px) and (max-width: 768px){
+    display: none;
+  }
+}
+
+.show-mobile {
+  @media (min-width: 1025px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1025px) {
+    display: none;
+  }
+
+  @media (min-width: 0px) and (max-width: 768px){
+
+  }
+}
+
+// EDITOR MODE STYLING
+.sling-cms-component, .sling-cms-editor{
+  position: relative;
 }

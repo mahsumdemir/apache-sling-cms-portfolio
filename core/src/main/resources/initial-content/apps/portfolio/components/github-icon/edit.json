@@ -1,0 +1,12 @@
+{
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "sling:resourceType": "sling-cms/components/general/container",
+
+    "url": {
+      "sling:resourceType": "sling-cms/components/editor/fields/text",
+      "label": "URL",
+      "name": "url"
+    }
+  }
+}
