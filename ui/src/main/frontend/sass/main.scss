@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 }
 
 .portfolio {
@@ -25,16 +26,17 @@ body {
     flex-direction: row-reverse;
     padding-right: 2%;
     padding-top: 1%;
-  }
+    z-index: 1;
 
-  .github-icon {
-    display: inline;
-    margin: 0 10px;
-  }
+    .github-icon {
+      display: inline;
+      margin: 0 10px;
+    }
 
-  .linked-icon {
-    display: inline;
-    margin: 0 10px;
+    .linked-icon {
+      display: inline;
+      margin: 0 10px;
+    }
   }
 
 
@@ -97,7 +99,7 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 768px){
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
