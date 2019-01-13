@@ -2,6 +2,9 @@
 # Created by https://www.gitignore.io/api/node,java,sass,intellij
 # Edit at https://www.gitignore.io/?templates=node,java,sass,intellij
 
+ui/src/main/resources/initial-content/static/clientlibs/portfolio/css/main.css
+ui/src/main/resources/initial-content/static/clientlibs/portfolio/js/scripts.portfolio-all.min.js
+
 ui/target
 core/target
 ui/src/main/frontend/node

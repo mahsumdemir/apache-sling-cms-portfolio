@@ -10,6 +10,7 @@
         <script>
             hljs.initHighlightingOnLoad();
         </script>
+        <script src="/static/clientlibs/portfolio/js/scripts.portfolio-all.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
 
@@ -25,14 +26,10 @@
         <sly data-sly-test="${properties.typingText}">
             <div class="dummy">
                 <div class="typewriter">
-                    <h1 style="color: ${properties.typingTextColor @ context = 'html'}">${properties.typingText}</h1>
+                    <h1 class="start-animation" style="color: ${properties.typingTextColor @ context = 'html'}">${properties.typingText}</h1>
                 </div>
             </div>
         </sly>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
         <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/finalize.jsp'}"/>
     </body>
 </html>

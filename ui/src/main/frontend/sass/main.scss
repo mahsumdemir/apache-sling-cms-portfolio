@@ -39,8 +39,6 @@ body {
     }
   }
 
-
-
   //TYPE WRITER
   //TAKEN FROM https://css-tricks.com/snippets/css/typewriter-effect/
 
@@ -67,6 +65,8 @@ body {
     animation:
             typing 3.5s steps(30, end),
             blink-caret .5s step-end infinite;
+    //Animation will be enabled by javascript after pages gets loaded
+    animation-play-state: paused;
   }
 
   /* The typing effect */
