@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .portfolio {
@@ -16,8 +19,9 @@ body {
   }
 
   .header {
-    position: relative;
+    position: absolute;
     display: flex;
+    width: 100%;
     flex-direction: row-reverse;
     padding-right: 2%;
     padding-top: 1%;
@@ -31,6 +35,69 @@ body {
   .linked-icon {
     display: inline;
     margin: 0 10px;
+  }
+
+
+
+  //TYPE WRITER
+  //TAKEN FROM https://css-tricks.com/snippets/css/typewriter-effect/
+
+
+  // I have no idea why but typewriter needs a relative parent also h1 needs a block parent
+  .dummy {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .typewriter {
+    margin: auto;
+  }
+
+  .typewriter h1 {
+    margin: 0 auto;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+}
+
+
+@media screen and (min-width: 1025px){
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px){
+  h1 {
+    font-size: 35px;
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+  h1 {
+    font-size: 20px;
   }
 }
 

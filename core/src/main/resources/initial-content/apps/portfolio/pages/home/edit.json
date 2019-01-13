@@ -12,6 +12,16 @@
       "name": "backgroundImage",
       "required": true
     },
+    "typingText": {
+      "sling:resourceType": "sling-cms/components/editor/fields/text",
+      "label": "Typing Text",
+      "name": "typingText"
+    },
+    "typingTextColor": {
+      "sling:resourceType": "sling-cms/components/editor/fields/text",
+      "label": "Typing Text Color",
+      "name": "typingTextColor"
+    },
     "published": {
       "jcr:primaryType": "nt:unstructured",
       "label": "Published",
