@@ -1,0 +1,8 @@
+{
+  "jcr:primaryType": "sling:OrderedFolder",
+  "home": {
+    "jcr:primaryType": "sling:Mapping",
+    "sling:match": "$",
+    "sling:internalRedirect": "/content/portfolio/www-mahsumdemir-com/home.html"
+  }
+}

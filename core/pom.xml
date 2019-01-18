@@ -167,7 +167,8 @@
                         </Sling-Model-Packages>
                         <Sling-Initial-Content>
                             initial-content/apps/portfolio;overwrite:=true;uninstall:=true;path:=/apps/portfolio,
-                            initial-content/conf/portfolio;overwrite:=true;uninstall:=true;path:=/conf/portfolio
+                            initial-content/conf/portfolio;overwrite:=true;uninstall:=true;path:=/conf/portfolio,
+                            initial-content/etc/map/http/www.mahsumdemir.com.json;overwrite:=true;uninstall:=true;path:=/etc/map/http
                         </Sling-Initial-Content>
                     </instructions>
                 </configuration>
